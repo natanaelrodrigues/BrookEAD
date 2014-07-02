@@ -1,0 +1,38 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  BrookAction;
+
+type
+  TCliente = Class (TObject)
+  private
+    FId:Integer;
+    FNome:String;
+  Published
+    property id : Integer read FId write FId;
+    property nome : String read FNome write FNome;
+  end;
+
+  TMyAction = class(specialize TBrookGAction<TCliente>)
+  public
+    procedure Get; override;
+  end;
+
+implementation
+
+procedure TMyAction.Get;
+begin
+  Write('***************<BR>');
+  Entity.id   := 10;
+  Entity.nome := 'Natanael Rodrigues';
+  Write(Entity);
+end;
+
+initialization
+  TMyAction.Register('*');
+
+end.

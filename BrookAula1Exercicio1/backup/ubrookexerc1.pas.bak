@@ -1,0 +1,26 @@
+unit uBrookExerc1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  BrookAction, BrookUtils;
+
+type
+  TMyAction = class(TBrookAction)
+  public
+    procedure Get; override;
+  end;
+
+implementation
+
+procedure TMyAction.Get;
+begin
+  raise EBrookAction.Create('Teste de erro.');
+end;
+
+initialization
+  TMyAction.Register('*');
+
+end.
