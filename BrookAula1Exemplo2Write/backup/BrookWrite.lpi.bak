@@ -36,7 +36,7 @@
         <PackageName Value="BrookRT"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="BrookWrite.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -51,7 +51,7 @@
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="41" Y="12"/>
+        <CursorPos X="15" Y="8"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -59,13 +59,24 @@
         <Filename Value="brokers.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Brokers"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="28" Y="15"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="cliente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Cliente"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="11"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit3>
     </Units>
     <JumpHistory Count="1" HistoryIndex="0">
       <Position1>
@@ -78,7 +89,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="C:\Apache2\htdocs\cgi-bin\BrookWrite.cgi" ApplyConventions="False"/>
+      <Filename Value="C:\Apache\htdocs\cgi-bin\BrookWrite.cgi" ApplyConventions="False"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

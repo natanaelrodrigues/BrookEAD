@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\fpc.exe" Date="1154382129"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -FuC:\lazarus\components\brookframework-3.0.0\packages\lib\i386-win32 -FuC:\APP_NR\src\Lazarus\BrookAula1Exemplo2Render\ -l -FEC:\Apache\htdocs\cgi-bin\ -oBrookRender.cgi BrookRender.lpr"/>
+</CONFIG>

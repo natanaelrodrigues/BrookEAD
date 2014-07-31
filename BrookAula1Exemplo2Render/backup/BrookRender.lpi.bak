@@ -9,7 +9,7 @@
         <Runnable Value="False"/>
       </Flags>
       <MainUnit Value="0"/>
-      <Title Value="BrookWrite"/>
+      <Title Value="BrookRender"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
       <ActiveWindowIndexAtStart Value="0"/>
@@ -36,22 +36,21 @@
         <PackageName Value="BrookRT"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="3">
       <Unit0>
-        <Filename Value="BrookWrite.lpr"/>
+        <Filename Value="BrookRender.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="BrookWrite"/>
+        <UnitName Value="BrookRender"/>
         <UsageCount Value="20"/>
       </Unit0>
       <Unit1>
-        <Filename Value="ubrookwrite.pas"/>
+        <Filename Value="ubrookrender.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="uBrookWrite"/>
-        <IsVisibleTab Value="True"/>
+        <UnitName Value="uBrookRender"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="15" Y="8"/>
+        <CursorPos X="18" Y="8"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -59,29 +58,19 @@
         <Filename Value="brokers.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Brokers"/>
-        <EditorIndex Value="2"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="28" Y="15"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-      </Unit2>
-      <Unit3>
-        <Filename Value="cliente.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Cliente"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="1" Y="11"/>
+        <CursorPos X="28" Y="13"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-      </Unit3>
+      </Unit2>
     </Units>
     <JumpHistory Count="1" HistoryIndex="0">
       <Position1>
         <Filename Value="brokers.pas"/>
-        <Caret Line="12" Column="9" TopLine="1"/>
+        <Caret Line="13" Column="46" TopLine="1"/>
       </Position1>
     </JumpHistory>
   </ProjectOptions>
@@ -89,7 +78,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="C:\Apache\htdocs\cgi-bin\BrookWrite.cgi" ApplyConventions="False"/>
+      <Filename Value="C:\Apache\htdocs\cgi-bin\BrookRender" ApplyConventions="False"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
