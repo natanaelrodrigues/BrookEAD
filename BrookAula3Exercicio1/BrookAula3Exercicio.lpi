@@ -5,6 +5,7 @@
     <PathDelim Value="\"/>
     <General>
       <Flags>
+        <SaveOnlyProjectUnits Value="True"/>
         <MainUnitHasCreateFormStatements Value="False"/>
       </Flags>
       <MainUnit Value="0"/>
@@ -19,53 +20,56 @@
     <VersionInfo>
       <StringTable ProductVersion=""/>
     </VersionInfo>
-    <BuildModes Count="3" Active="Debug">
-      <Item1 Name="Debug" Default="True"/>
-      <Item2 Name="Trace">
+    <BuildModes Count="3" Active="Release">
+      <Item1 Name="Release" Default="True"/>
+      <Item2 Name="Debug">
         <CompilerOptions>
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="BrookAula3Exercicio"/>
+            <Filename Value="brookaula3exercicio"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
           </SearchPaths>
-          <CodeGeneration>
-            <Optimizations>
-              <OptimizationLevel Value="2"/>
-            </Optimizations>
-          </CodeGeneration>
           <Linking>
             <Debugging>
-              <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsDwarf2Set"/>
+              <UseExternalDbgSyms Value="True"/>
             </Debugging>
-            <LinkSmart Value="True"/>
           </Linking>
           <Other>
             <CompilerMessages>
               <MsgFileName Value=""/>
             </CompilerMessages>
-            <CustomOptions Value="-dTRACE"/>
+            <CustomOptions Value="-dDEBUG"/>
             <CompilerPath Value="$(CompPath)"/>
           </Other>
         </CompilerOptions>
       </Item2>
-      <Item3 Name="Release">
+      <Item3 Name="Trace">
         <CompilerOptions>
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="C:\Apache\htdocs\cgi-bin\BrookAula3Exercicio.cgi" ApplyConventions="False"/>
+            <Filename Value="brookaula3exercicio"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
           </SearchPaths>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2Set"/>
+              <UseHeaptrc Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+          </Linking>
           <Other>
             <CompilerMessages>
               <MsgFileName Value=""/>
             </CompilerMessages>
-            <CustomOptions Value="-dRELEASE"/>
+            <CustomOptions Value="-dDEBUG
+-dTRACE"/>
             <CompilerPath Value="$(CompPath)"/>
           </Other>
         </CompilerOptions>
@@ -84,75 +88,55 @@
         <PackageName Value="BrookRT"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="3">
       <Unit0>
         <Filename Value="BrookAula3Exercicio.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="BrookAula3Exercicio"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="udesafio.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="udesafio"/>
-        <EditorIndex Value="0"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="10" Y="7"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="brokers.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Brokers"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="29" Y="18"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit2>
-      <Unit3>
-        <Filename Value="C:\lazarus\components\brookframework-3.0.0\brokers\brookfclhttpappbroker.pas"/>
-        <UnitName Value="BrookFCLHttpAppBroker"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="74"/>
-        <CursorPos X="1" Y="112"/>
-        <UsageCount Value="10"/>
-      </Unit3>
     </Units>
-    <CustomDefines Count="3">
-      <Define0 Value="RELEASE"/>
-      <Define1 Value="DEBUG"/>
-      <Define2 Value="TRACE"/>
-    </CustomDefines>
-    <JumpHistory Count="2" HistoryIndex="1">
-      <Position1>
-        <Filename Value="brokers.pas"/>
-        <Caret Line="8" Column="4" TopLine="1"/>
-      </Position1>
-      <Position2>
-        <Filename Value="udesafio.pas"/>
-        <Caret Line="20" Column="17" TopLine="5"/>
-      </Position2>
-    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="BrookAula3Exercicio"/>
+      <Filename Value="brookaula3exercicio.bf" ApplyConventions="False"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
     </SearchPaths>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+    </Linking>
     <Other>
       <CompilerMessages>
         <MsgFileName Value=""/>
       </CompilerMessages>
-      <CustomOptions Value="-dDEBUG"/>
+      <CustomOptions Value="-dRELEASE"/>
       <CompilerPath Value="$(CompPath)"/>
     </Other>
   </CompilerOptions>
